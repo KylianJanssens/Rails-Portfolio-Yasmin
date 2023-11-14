@@ -1,12 +1,19 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  display: flex;
+  background: $colorhunt-white;
+  justify-content: center;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+.navbar-paths {
+  display: flex;
+    a {
+      padding-left: 30px;
+      padding-right: 30px;
+      text-decoration: none;
+      color: $colorhunt-blue;
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+      &:hover{
+        color: $colorhunt-brown;
+      }
+    }
 }

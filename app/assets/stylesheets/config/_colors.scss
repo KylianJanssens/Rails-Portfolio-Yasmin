@@ -1,4 +1,9 @@
-// Define variables for your color scheme
+
+$colorhunt-pink: #EAC7C7;
+$colorhunt-blue: #A0C3D2;
+$colorhunt-white: #F7F5EB;
+$colorhunt-brown: #EAE0DA;
+
 
 // For example:
 $red: #FD1015;
@@ -8,3 +13,7 @@ $orange: #E67E22;
 $green: #1EDD88;
 $gray: #0E0000;
 $light-gray: #F4F4F4;
+
+body {
+  background-color: $colorhunt-pink; /* Set your desired background color */
+}
