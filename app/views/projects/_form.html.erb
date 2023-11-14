@@ -1,0 +1,13 @@
+<div class="container">
+  <%= simple_form_for(@project) do |f| %>
+    <div class="form-inputs mt-5 form-background">
+      <%= f.input :name %>
+      <%= f.input :description %>
+      <%= f.input :photo, as: :file %>
+    </div>
+
+    <div class="form-actions mt-4">
+      <%= f.button :submit, class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
