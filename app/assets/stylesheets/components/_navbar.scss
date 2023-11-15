@@ -1,7 +1,10 @@
 .navbar {
   display: flex;
-  background: $colorhunt-white;
+  background: $colorhunt-brown;
   justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .navbar-paths {
@@ -12,8 +15,8 @@
       text-decoration: none;
       color: $colorhunt-blue;
 
-      &:hover{
-        color: $colorhunt-brown;
+      &:hover {
+        color: $colorhunt-pink;
       }
     }
 }

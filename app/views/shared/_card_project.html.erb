@@ -1,3 +1,8 @@
-<div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  Breakfast
+<div class="card-project">
+  <%= link_to project_path(project), class: "card-link" do %>
+    <div class="background-image" style="background-image: url('<%= cl_image_path project.cover_photo.key, crop: :fill %>')">
+    <p class="project-name"><%= project.name %></p>
+    <p class="view-text">-view-</p>
+    </div>
+  <% end %>
 </div>

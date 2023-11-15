@@ -18,10 +18,10 @@ class ProjectsController < ApplicationController
     redirect_to project_path(@project)
   end
 
-
   private
 
   def params_project
     params.require(:project).permit(:name, :description, :cover_photo, photos: [])
   end
+
 end

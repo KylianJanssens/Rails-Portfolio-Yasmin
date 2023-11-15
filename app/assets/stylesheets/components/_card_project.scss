@@ -1,7 +1,5 @@
 .card-project {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +7,45 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  transition: background-image 0.3s ease;
+
+    &:hover {
+      filter: grayscale(100%)
+    }
+}
+
+
+
+
+.project-name,
+.view-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+}
+
+.view-text {
+  top: 58%; /* Adjust the percentage to move it lower */
+}
+
+.card-project:hover .project-name,
+.card-project:hover .view-text {
+  opacity: 1;
 }

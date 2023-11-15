@@ -2,7 +2,9 @@
 <div class="container">
   <div class="container-index">
     <div class="cards">
-      <%= render "shared/card_project" %>
+      <% @projects.each do |project| %>
+        <%= render "shared/card_project", project: project %>
+      <% end %>
     </div>
   </div>
 </div>
