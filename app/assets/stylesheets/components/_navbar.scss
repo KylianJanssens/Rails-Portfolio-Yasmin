@@ -1,22 +1,32 @@
-.navbar {
-  display: flex;
+.navbar-lewagon {
+  justify-content: space-between;
   background: $colorhunt-brown;
-  justify-content: center;
   position: fixed;
   z-index: 1000;
   width: 100%;
+
+  .container-fluid {
+    justify-content: center;
+  }
+
+  a{
+    font-family: $headers-font;
+    font-size: 20px;
+    // color: $colorhunt-blue;
+
+    &:hover {
+      color: $colorhunt-pink;
+      }
+  }
+
 }
 
-.navbar-paths {
-  display: flex;
-    a {
-      padding-left: 30px;
-      padding-right: 30px;
-      text-decoration: none;
-      color: $colorhunt-blue;
 
-      &:hover {
-        color: $colorhunt-pink;
-      }
-    }
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
 }
