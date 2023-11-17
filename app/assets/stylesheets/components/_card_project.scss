@@ -27,22 +27,38 @@
     }
 }
 
-
+.card-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .project-name,
 .view-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   color: white;
+
 }
 
 .view-text {
-  top: 58%; /* Adjust the percentage to move it lower */
+  // top: 58%; /* Adjust the percentage to move it lower */
+  font-size: smaller;
+  font-family: 'Amatic SC';
+}
+
+.project-name{
+  font-size: larger;
+  font-family: 'Quicksand';
+  padding: 0 20px;
+
 }
 
 .card-project:hover .project-name,

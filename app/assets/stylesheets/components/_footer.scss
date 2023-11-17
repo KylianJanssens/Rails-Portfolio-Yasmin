@@ -3,9 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
+  min-height: 100px;
+  height: auto
+
 }
 .footer-links {
   display: flex;
@@ -23,3 +25,15 @@
   color: $colorhunt-pink;
 }
 
+.footer-copyright{
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 767px) {
+    p {
+      font-size: 7px;
+    }
+  }
+}
