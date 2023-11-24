@@ -27,3 +27,19 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-family: Amatic SC;
 }
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  border: 1px solid $colorhunt-blue;
+  background-color: $colorhunt-blue;
+  color: white;
+}

@@ -15,6 +15,13 @@
 
           <div class="images-container">
             <%= cl_image_tag @project.cover_photo.key, crop: :fill %>
+
+            <div class="side-images">
+              <% @project.photos.each do |photo| %>
+                <%= cl_image_tag photo.key, crop: :fill %>
+              <% end %>
+            </div>
+
           </div>
 
       </div>

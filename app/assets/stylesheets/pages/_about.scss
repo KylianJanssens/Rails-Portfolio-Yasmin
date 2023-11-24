@@ -1,0 +1,16 @@
+#about-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+    img{
+      width: 100%;
+      border-radius: 0.3rem;
+
+    }
+}
+
+.content{
+  margin-top: 7rem;
+}

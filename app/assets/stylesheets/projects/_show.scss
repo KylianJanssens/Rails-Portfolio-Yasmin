@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  border-radius: 5px;
+  border-radius: 0.3rem;
 
     @media (max-width: 992px) {
       height: 50vh;
@@ -37,6 +37,8 @@
   flex-direction: column;
   border-radius: 5px;
   min-height: 90px;
+  justify-content: center;
+
 
     p {
       margin-top: 0px;
@@ -50,9 +52,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
     img{
       width: 100%;
-      border-radius: 5px;
+      border-radius: 0.3rem;
 
     }
+}
+
+.side-images {
+  img{
+    margin-top: 10px;
+  }
 }

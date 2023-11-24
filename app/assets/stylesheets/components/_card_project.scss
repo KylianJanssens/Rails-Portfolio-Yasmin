@@ -23,7 +23,8 @@
   transition: background-image 0.3s ease;
 
     &:hover {
-      filter: grayscale(100%)
+      filter: grayscale(100%);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
