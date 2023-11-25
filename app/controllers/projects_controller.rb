@@ -14,8 +14,27 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(params_project)
-    @project.save!
-    redirect_to project_path(@project)
+    if @project.save!
+      redirect_to project_path(@project)
+    else
+    render :new
+    end
+  end
+
+  def edit
+    @project = Project.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    @project = @project.update(params_project)
+    redirect_to projects_path
+  end
+
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+    redirect_to projects_path, status: :see_othher
   end
 
   private
