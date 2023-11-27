@@ -1,13 +1,15 @@
 <div class="main-container">
-  <div>
-    <%= link_to edit_project_path(@project) do %>
-      Edit
-    <% end %>
+  <% if user_signed_in? %>
+    <div>
+      <%= link_to edit_project_path(@project) do %>
+        Edit
+      <% end %>
 
-    <%= link_to project_path(@project), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "link-danger" do %>
-      Remove
+      <%= link_to project_path(@project), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "link-danger" do %>
+        Remove
+      <% end %>
+      </div>
     <% end %>
-    </div>
 
   <div class="row justify-content-center">
     <div class="col-12 col-lg-3">
