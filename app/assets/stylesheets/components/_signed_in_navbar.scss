@@ -1,0 +1,15 @@
+.signed-in-navbar{
+  background-color: $colorhunt-brown;
+  padding: 2rem;
+  h1{
+    font-family: "Quicksand";
+    font-size: 1.3rem;
+  }
+}
+
+.user-actions{
+  display: flex;
+  button{
+    margin-right: 1rem;
+  }
+}

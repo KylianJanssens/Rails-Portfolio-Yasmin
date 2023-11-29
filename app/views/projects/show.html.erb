@@ -1,15 +1,9 @@
-<div class="main-container">
-  <% if user_signed_in? %>
-    <div>
-      <%= link_to edit_project_path(@project) do %>
-        Edit
-      <% end %>
 
-      <%= link_to project_path(@project), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "link-danger" do %>
-        Remove
-      <% end %>
-      </div>
-    <% end %>
+<% if user_signed_in? %>
+<div class="main-container-signed-in">
+<% else %>
+<div class="main-container">
+<% end %>
 
   <div class="row justify-content-center">
     <div class="col-12 col-lg-3">
@@ -40,43 +34,3 @@
     </div>
   </div>
 </div>
-    <%# <%= cl_image_tag @project.cover_photo.key %>
-
-    <%# <%= cl_image_tag @project.cover_photo.key, width: 700, crop: "fill", responsive: true %>
-
-
-<%# cl_image_tag("sample.jpg", :width => 400, :crop => "scale", :responsive => true) %>
-    <%# <%= cl_image_tag @project.cover_photo.key, crop: :fill %>
-
-
-<%# <%= cl_image_tag @project.cover_photo.key, height: 500, width: 700, crop: :fill %>
-
-
-<%# <% @project.photos.each do |photo| %>
-  <%# <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<%# <% end %>
-
-
-<%# ---------------carousel------------ %>
-
-      <%# <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> %>
