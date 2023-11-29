@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: sticky;
+  top: 0;
 
     img{
       width: 100%;
@@ -18,4 +20,3 @@
 h1{
   font-family: Amatic SC;
 }
-

@@ -3,19 +3,19 @@
     <div class="col-12">
       <div class="signed-in-navbar">
 
-        <h1>Logged in as: <%= current_user.email %></h1>
+
+        <h1><%= current_user.email %></h1>
           <div class="user-actions">
 
+            <%# When on the INDEXPAGE display this extra action %>
             <% if params[:controller] == "projects" && params[:action] == "index" %>
               <%= link_to new_project_path do %>
                 <button class="btn btn-outline-success">Add project 🎨</button>
               <% end %>
             <% end %>
+            <%# -------- %>
 
-            <%= link_to destroy_user_session_path, data: {turbo_method: :delete} do %>
-              <button class="btn btn-outline-secondary">Sign out 👋</button>
-            <% end %>
-
+            <%# when on the SHOWPAGE display these extra actions %>
             <% if params[:controller] == "projects" && params[:action] == "show" %>
               <%= link_to edit_project_path(@project) do %>
                 <button class="btn btn-outline-primary">Edit project ✍️</button>
@@ -25,7 +25,12 @@
                 <button class="btn btn-outline-danger">Remove project ❌</button>
               <% end %>
             <% end %>
+            <%# -------- %>
+            <%= link_to destroy_user_session_path, data: {turbo_method: :delete} do %>
+              <button class="btn btn-outline-secondary">Sign out 👋</button>
+            <% end %>
           </div>
+
 
       </div>
     </div>
