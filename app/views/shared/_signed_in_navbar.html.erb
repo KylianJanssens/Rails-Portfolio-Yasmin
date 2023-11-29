@@ -5,6 +5,13 @@
 
         <h1>Logged in as: <%= current_user.email %></h1>
           <div class="user-actions">
+
+            <% if params[:controller] == "projects" && params[:action] == "index" %>
+              <%= link_to new_project_path do %>
+                <button class="btn btn-outline-success">Add project 🎨</button>
+              <% end %>
+            <% end %>
+
             <%= link_to destroy_user_session_path, data: {turbo_method: :delete} do %>
               <button class="btn btn-outline-secondary">Sign out 👋</button>
             <% end %>
