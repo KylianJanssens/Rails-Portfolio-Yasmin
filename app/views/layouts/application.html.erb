@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <%= render "shared/header" %>
     <%= render "shared/navbar" %>
       <% if user_signed_in? %>
         <%= render "shared/signed_in_navbar" %>

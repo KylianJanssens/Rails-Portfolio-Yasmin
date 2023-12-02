@@ -1,8 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: $colorhunt-pink;
-  position: fixed;
-  z-index: 1000;
+  // background: $colorhunt-pink;
+  // position: fixed;
+  // z-index: 1000;
   width: 100%;
 
   .container-fluid {
@@ -10,9 +10,9 @@
   }
 
   a{
-    font-family: $headers-font;
-    font-size: 20px;
-    color: $colorhunt-white;
+    font-family: Amatic SC;
+    font-size: 2rem;
+    color: black;
 
     &:hover {
       color: $colorhunt-blue;
