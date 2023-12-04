@@ -1,5 +1,5 @@
 .card-project {
-  height: 400px;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1; /* Allow card-text to grow and take up remaining space */
+
 }
 
 
