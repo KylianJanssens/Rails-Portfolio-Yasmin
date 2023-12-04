@@ -4,15 +4,15 @@
   margin-bottom: 70px;
   border-radius: 0.3rem;
 }
-.container{
-  padding: 0 10rem;
-}
+// .container{
+//   // padding: 0 10rem;
+// }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-}
+// .cards {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   // grid-gap: 16px;
+// }
 
 // // Smallest device
 // @media (min-width: 100px) and (max-width: 575px) {
@@ -45,6 +45,6 @@
 // // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) {
 //   .cards {
-//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
 //   }
 // }
